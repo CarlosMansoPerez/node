@@ -1,2 +1,2 @@
 #!/bin/bash -xe
-npm-stop
+npm stop
