@@ -1,1 +1,2 @@
-    npm-stop
+#!/bin/bash -xe
+npm-stop

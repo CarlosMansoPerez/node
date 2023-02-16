@@ -1,1 +1,2 @@
-    npm start
+#!/bin/bash -xe
+npm start
