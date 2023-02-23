@@ -24,9 +24,5 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
         aws-region: us-east-1
-    run:
-        create-deployment
-      --application-name webserver
-      [--deployment-group-name w4er5tyr]
-      [--github-location d-ITTFDV6SM]
+    - run: aws deploy create-deployment --application-name webserver --deployment-group-name w4er5tyr --github-location repository={{ github.repository }},commitId= ${{ github.sha }} 
 
