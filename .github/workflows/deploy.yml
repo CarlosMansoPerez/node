@@ -3,6 +3,8 @@ name: Deploy to Amazon ECS
 on:
   workflow_run:
     workflows: ["CI"]
+      types:
+        - completed
 
 jobs:
   deploy:
