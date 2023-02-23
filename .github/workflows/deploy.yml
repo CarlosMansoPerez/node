@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     if: ${{ github.event.workflow-run.conclussion=="success" }}
+
     steps:
     - name: Checkout
       uses: actions/checkout@v3
@@ -21,5 +22,3 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
         aws-region: us-east-1
-    - name:
-      run: 
