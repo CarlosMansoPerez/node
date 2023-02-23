@@ -1,8 +1,8 @@
 name: Deploy to Amazon ECS
 
 on:
-  check_run:
-    types: [completed]
+  workflow_run:
+    workflows: ["Build"]
 
 jobs:
   deploy:
