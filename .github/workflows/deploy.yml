@@ -2,9 +2,9 @@ name: Deploy to Amazon
 
 on:
   workflow_run:
-    workflows: ["CI"]
-      types:
-        - completed
+    workflows: [Run Tests]
+    types:
+      - completed
 
 jobs:
   deploy:
