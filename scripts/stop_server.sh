@@ -1,3 +1,3 @@
 # #!/bin/bash -xe
-# cd /home/ubuntu/app/release
-# npm stop
+cd /home/ubuntu/app/release
+npm stop
